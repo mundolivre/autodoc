@@ -1,4 +1,4 @@
-language: cpp
+language: generic
 
 # This will run on Travis' 'new' container-based infrastructure
 sudo: false
