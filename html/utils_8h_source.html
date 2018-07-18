@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,21 +88,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">utils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __UTILS</span></div>
+<a href="utils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __UTILS</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __UTILS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef WIN32_LEAN_AND_MEAN</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="utils_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9">    5</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _WINSOCK_DEPRECATED_NO_WARNINGS</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WINSOCK_DEPRECATED_NO_WARNINGS</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="utils_8h.html#adfc8f90f3a8caa8423099cf36ff214f1">    9</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WINSOCK_DEPRECATED_NO_WARNINGS</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef NETDISCOVERY_EXPORTS</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NETDISCOVERY_API __declspec(dllexport)</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NETDISCOVERY_API __declspec(dllimport)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="utils_8h.html#a847afac2ff268a2e732fa69591d86f6a">   15</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NETDISCOVERY_API __declspec(dllimport)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma once</span></div>
@@ -132,12 +133,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">* @brief Callback para ARP Scan</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> void(*CALLBACK_ARPSCAN) (<span class="keywordtype">char</span> * IPv4, <span class="keywordtype">char</span> * PhysicalAddress);</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="utils_8h.html#a4f6bb23d01ed846c8d3aad1a6193461f">   46</a></span>&#160;<span class="keyword">typedef</span> void(*<a class="code" href="utils_8h.html#a4f6bb23d01ed846c8d3aad1a6193461f">CALLBACK_ARPSCAN</a>) (<span class="keywordtype">char</span> * IPv4, <span class="keywordtype">char</span> * PhysicalAddress);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">* @brief Callback para Descoberta de adaptadores de rede</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">typedef</span> void(*CALLBACK_ADAPTERS) (</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="utils_8h.html#aead6a07bd7de3de41bbbe73177cd0bdf">   51</a></span>&#160;<span class="keyword">typedef</span> void(*<a class="code" href="utils_8h.html#aead6a07bd7de3de41bbbe73177cd0bdf">CALLBACK_ADAPTERS</a>) (</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    DWORD Index,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span> *AdapterName,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">char</span> *Description,</div>
@@ -149,44 +150,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">* @brief Callback para expor log de erros</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> void(*CALLBACK_ERROR_MESSAGES) (LPCSTR errorMsg);</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="utils_8h.html#a67a57afb81cb7411ae5b4116806f418e">   63</a></span>&#160;<span class="keyword">typedef</span> void(*<a class="code" href="utils_8h.html#a67a57afb81cb7411ae5b4116806f418e">CALLBACK_ERROR_MESSAGES</a>) (LPCSTR errorMsg);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">* @brief Callback para expor os computadores identificados com sistema operacional Windows</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">typedef</span> void(*CALLBACK_WINDOWS_COMPUTERS) (LPCSTR IPv4, LPCSTR MacAddress, LPCSTR NetBiosName, LPCSTR FQDN);</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="utils_8h.html#a84bd4a9f6697b90c476789dbe160b4e4">   68</a></span>&#160;<span class="keyword">typedef</span> void(*<a class="code" href="utils_8h.html#a84bd4a9f6697b90c476789dbe160b4e4">CALLBACK_WINDOWS_COMPUTERS</a>) (LPCSTR IPv4, LPCSTR MacAddress, LPCSTR NetBiosName, LPCSTR FQDN);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">* @brief Obtém a lista de adaptadores no computador</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> GetAdapters(CALLBACK_ADAPTERS fnCallbackAdapter);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a0420816fc1df04d30d5ff2a5bc701b5d">GetAdapters</a>(<a class="code" href="utils_8h.html#aead6a07bd7de3de41bbbe73177cd0bdf">CALLBACK_ADAPTERS</a> fnCallbackAdapter);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">* @brief Obtém a lista atualizada de computadores próximos</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> GetNetNeighbor(std::map&lt;std::string, Neighbor&gt; &amp;Reachable);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#ac50aecbf174aa043c615ad9bd7805cfd">GetNetNeighbor</a>(std::map&lt;std::string, Neighbor&gt; &amp;Reachable);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">* @brief Obtém o prefixo da rede</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">char</span> * GetNetworkPrefix(<span class="keyword">const</span> std::string &amp;IpMask);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="utils_8h.html#ab99dd299afd92b87341e95ec69ae0e21">GetNetworkPrefix</a>(<span class="keyword">const</span> std::string &amp;IpMask);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">* @brief Formata um endereço MAC</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;std::string FormatMacAddress(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> length, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> PhysicalAddress[]);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;std::string <a class="code" href="utils_8h.html#a13c2dd5c97e23b4c4ee9eb23129e8902">FormatMacAddress</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> length, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> PhysicalAddress[]);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">* @brief Formata up IP Reverso</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> ReverseIP(std::wstring &amp;host);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a038d7461c833f2b9fb7c44de1f861a0e">ReverseIP</a>(std::wstring &amp;host);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">* @brief Executa consulta DNS de resolução reversa</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> ReverseDnsQuery(std::wstring &amp;host);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a45f90cb0186fbffac76363cf109ac873">ReverseDnsQuery</a>(std::wstring &amp;host);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="utils_8h_html_a4f6bb23d01ed846c8d3aad1a6193461f"><div class="ttname"><a href="utils_8h.html#a4f6bb23d01ed846c8d3aad1a6193461f">CALLBACK_ARPSCAN</a></div><div class="ttdeci">void(* CALLBACK_ARPSCAN)(char *IPv4, char *PhysicalAddress)</div><div class="ttdef"><b>Definition:</b> utils.h:46</div></div>
+<div class="ttc" id="utils_8h_html_a67a57afb81cb7411ae5b4116806f418e"><div class="ttname"><a href="utils_8h.html#a67a57afb81cb7411ae5b4116806f418e">CALLBACK_ERROR_MESSAGES</a></div><div class="ttdeci">void(* CALLBACK_ERROR_MESSAGES)(LPCSTR errorMsg)</div><div class="ttdef"><b>Definition:</b> utils.h:63</div></div>
+<div class="ttc" id="utils_8h_html_aead6a07bd7de3de41bbbe73177cd0bdf"><div class="ttname"><a href="utils_8h.html#aead6a07bd7de3de41bbbe73177cd0bdf">CALLBACK_ADAPTERS</a></div><div class="ttdeci">void(* CALLBACK_ADAPTERS)(DWORD Index, char *AdapterName, char *Description, char *MacAddress, char *IpAddress, char *IpMask, char *Gateway)</div><div class="ttdef"><b>Definition:</b> utils.h:51</div></div>
+<div class="ttc" id="utils_8h_html_ab99dd299afd92b87341e95ec69ae0e21"><div class="ttname"><a href="utils_8h.html#ab99dd299afd92b87341e95ec69ae0e21">GetNetworkPrefix</a></div><div class="ttdeci">char * GetNetworkPrefix(const std::string &amp;IpMask)</div></div>
+<div class="ttc" id="utils_8h_html_a038d7461c833f2b9fb7c44de1f861a0e"><div class="ttname"><a href="utils_8h.html#a038d7461c833f2b9fb7c44de1f861a0e">ReverseIP</a></div><div class="ttdeci">void ReverseIP(std::wstring &amp;host)</div></div>
+<div class="ttc" id="utils_8h_html_ac50aecbf174aa043c615ad9bd7805cfd"><div class="ttname"><a href="utils_8h.html#ac50aecbf174aa043c615ad9bd7805cfd">GetNetNeighbor</a></div><div class="ttdeci">void GetNetNeighbor(std::map&lt; std::string, Neighbor &gt; &amp;Reachable)</div></div>
+<div class="ttc" id="utils_8h_html_a13c2dd5c97e23b4c4ee9eb23129e8902"><div class="ttname"><a href="utils_8h.html#a13c2dd5c97e23b4c4ee9eb23129e8902">FormatMacAddress</a></div><div class="ttdeci">std::string FormatMacAddress(unsigned long length, unsigned char PhysicalAddress[])</div></div>
+<div class="ttc" id="utils_8h_html_a45f90cb0186fbffac76363cf109ac873"><div class="ttname"><a href="utils_8h.html#a45f90cb0186fbffac76363cf109ac873">ReverseDnsQuery</a></div><div class="ttdeci">void ReverseDnsQuery(std::wstring &amp;host)</div></div>
+<div class="ttc" id="utils_8h_html_a0420816fc1df04d30d5ff2a5bc701b5d"><div class="ttname"><a href="utils_8h.html#a0420816fc1df04d30d5ff2a5bc701b5d">GetAdapters</a></div><div class="ttdeci">void GetAdapters(CALLBACK_ADAPTERS fnCallbackAdapter)</div></div>
+<div class="ttc" id="utils_8h_html_a84bd4a9f6697b90c476789dbe160b4e4"><div class="ttname"><a href="utils_8h.html#a84bd4a9f6697b90c476789dbe160b4e4">CALLBACK_WINDOWS_COMPUTERS</a></div><div class="ttdeci">void(* CALLBACK_WINDOWS_COMPUTERS)(LPCSTR IPv4, LPCSTR MacAddress, LPCSTR NetBiosName, LPCSTR FQDN)</div><div class="ttdef"><b>Definition:</b> utils.h:68</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
