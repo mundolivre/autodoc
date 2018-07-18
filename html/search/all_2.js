@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['javadoc_5ftest',['Javadoc_Test',['../classJavadoc__Test.html',1,'Javadoc_Test'],['../classJavadoc__Test.html#a17313327932ae97596b0a455ba8342cc',1,'Javadoc_Test::Javadoc_Test()']]]
+  ['enumptr',['enumPtr',['../classJavadoc__Test.html#abcb36df9d8af3e69290c239ba483d6df',1,'Javadoc_Test']]],
+  ['enumvar',['enumVar',['../classJavadoc__Test.html#a689558649150237b53a5c8ed89c996c2',1,'Javadoc_Test']]]
 ];
