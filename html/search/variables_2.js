@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handler',['handler',['../classJavadoc__Test.html#afb24347c87bba4f1cfa21a118d22eef1',1,'Javadoc_Test']]]
+  ['publicvar',['publicVar',['../classJavadoc__Test.html#a44a516fbc3a4865e2dcae34649c9df6a',1,'Javadoc_Test']]]
 ];
