@@ -13,7 +13,7 @@ env:
   global:
     - GH_REPO_NAME: autodoc
     - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
-    - GH_REPO_REF: github.com/mundolivre/autodoc.git
+    - GH_REPO_REF: github.com/mundolivre/gendoc.git
 
 # Install dependencies
 addons:
