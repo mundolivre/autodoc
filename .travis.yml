@@ -11,7 +11,7 @@ branches:
 # Environment variables
 env:
   global:
-    - GH_REPO_NAME: autodoc
+    - GH_REPO_NAME: gendoc
     - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
     - GH_REPO_REF: github.com/mundolivre/gendoc.git
 
